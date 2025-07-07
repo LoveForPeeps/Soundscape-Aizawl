@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    transition: all 0.1s;
+}
+
+body {
+    background-color: #000;
+    color: #f3f3f3;
+    font-family: 'Manrope', 'Roboto', 'Arial';
+    height: 100vh;
+}
+
+a {
+    color: #f3f3f3;
+    text-decoration: none;
+}
+
+nav {
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+
+hr {
+    margin: 3rem 0;
+    border: 2px solid;
+    border-color: #27262c;
+}
+
+button {
+    background-color: #191820;
+    color: #f3f3f3;
+   
+    border-radius: 8px;
+    border: none;
+
+    padding: 1rem 2rem;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    align-self: flex-start;
+
+    cursor: pointer;
+}
+
+#background-image, #background-dimmer {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: absolute;
+    z-index: -999;
+}
+
+#background-dimmer {
+    position: fixed;
+    z-index: -400;
+    height: 100%;
+}
+
+#main {
+    height: 100%;
+    flex-direction: column;
+    padding: 0 12%;
+}
+
+nav>a {
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.links {
+    text-decoration: none;
+    list-style: none;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+}
+
+#hero {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10rem 5%;
+    font-weight: 100;
+    font-size: 1.7rem;
+    gap: 1rem;
+
+    flex-direction: column;
+}
+
+#hero>p {
+    font-size: 1.4rem;
+}
+
+.info-section {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 3.5rem 5%;
+    font-weight: 500;
+    font-size: 1.2rem;
+
+    flex-direction: column;
+}
+
+.text-section {
+    flex: 1;
+    align-items: center;
+}
+
+.main-text{
+    font-size: 2.5rem;
+    font-weight: 800;
+    width: 70%;
+    white-space: nowrap;
+}
+
+.secondary-text {
+    margin-left: 10%;
+}
+
+.image-section {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.image-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+
+    width: 220px;
+    height: 350px; /* make all cards equal height */
+
+    border-radius: 12px;
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.image-card img {
+    width: 100%;
+    height: 260px; /* consistent image height */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.image-card:hover {
+    transform: scale(1.05);
+}
+
+.image-card p {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+footer {
+    padding-bottom: 2rem;
+    margin-top: -3rem;
+    text-align: center;
+}
